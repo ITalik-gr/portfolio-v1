@@ -1,4 +1,13 @@
 
+@media (max-width: 1920px) {
+  .exp {
+    &-image {
+      img {
+        width: 90%;
+      }
+    }
+  }
+}
 @media (max-width: 1400px) { //1200
 
 }

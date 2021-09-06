@@ -23,18 +23,19 @@
       }
       a {
         font-weight: normal;
-        font-size: 16px;
+        font-size: 26.3px;
+        font-size: calc(16px + 10 * (100vw / 2367));
         line-height: 111%;
         color: #1D1A23;
       }
       &__sale {
         cursor: default;
         font-weight: bold;
-        font-size: 12px;
+        font-size: 19.725px;
         line-height: 111%;
         color: #FFFFFF;
-        width: 46px;
-        height: 21px;
+        width: 75.61px;
+        height: 34.52px;
         background: #FA4A4A;
         display: flex;
         justify-content: center;
@@ -73,7 +74,7 @@
     font-weight: 600;
     // font-size: 92px;
     // font-size: 4vw;
-    font-size: calc(24px + 68 * (100vw / 1440));
+    font-size: calc(38px + 113 * (100vw / 2367));
     line-height: 111%;
     letter-spacing: -0.03em;
     text-transform: uppercase;
@@ -85,9 +86,9 @@
   }
   h3 {
     font-weight: normal;
-    font-size: 24px;
+    // font-size: 24px;
     line-height: 113.5%;
     color: #1D1A23;
-    font-size: calc(17px + 7 * (100vw / 1440));
+    font-size: calc(16px + 23 * (100vw / 2367));
   }
 }
