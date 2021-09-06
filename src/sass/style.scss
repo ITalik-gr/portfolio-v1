@@ -17,6 +17,9 @@ span {
     padding: 0;
     margin: 0;
 }
-
+.container-fluid {
+    padding-left: 40px;
+    padding-right: 40px;
+}
 @import 'blocks/header';
 @import 'blocks/exp';
