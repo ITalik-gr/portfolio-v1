@@ -68,7 +68,6 @@
     <div class="exp">
         <div class="container-fluid">
             <div class="exp-wrap">
-                <div class="exp-block">
                     <div class="exp-text">
                         <h4 class="exp-title">
                             5+ years of <br> experience
@@ -85,11 +84,41 @@
                     <div class="exp-image">
                         <img src="img/expirienc-image.png" alt="">
                     </div>
-                </div>
             </div>
         </div>
     </div>
 
     <script src="js/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+    <script>
+SmoothScroll({
+    // Время скролла 400 = 0.4 секунды
+    animationTime    : 1100,
+    // Размер шага в пикселях 
+    stepSize         : 75,
+
+    // Дополнительные настройки:
+    
+    // Ускорение 
+    accelerationDelta : 25,  
+    // Максимальное ускорение
+    accelerationMax   : 2,   
+
+    // Поддержка клавиатуры
+    keyboardSupport   : true,  
+    // Шаг скролла стрелками на клавиатуре в пикселях
+    arrowScroll       : 250,
+
+    // Pulse (less tweakable)
+    // ratio of "tail" to "acceleration"
+    pulseAlgorithm   : true,
+    pulseScale       : 4,
+    pulseNormalize   : 1,
+
+    // Поддержка тачпада
+    touchpadSupport   : true,
+})
+    </script>
 </body>
 </html>

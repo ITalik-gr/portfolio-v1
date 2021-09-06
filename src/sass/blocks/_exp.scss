@@ -4,7 +4,7 @@
   height: 100vh;
   &-wrap {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
   &-text {
@@ -14,13 +14,6 @@
     img {
       max-width: 670px;
     }
-  }
-  &-block {
-    max-width: 1360px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
   &-title {
     font-weight: 600;
