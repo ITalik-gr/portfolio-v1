@@ -71,7 +71,9 @@
   &-title {
     margin-bottom: 21px;
     font-weight: 600;
-    font-size: 92px;
+    // font-size: 92px;
+    // font-size: 4vw;
+    font-size: calc(24px + 68 * (100vw / 1440));
     line-height: 111%;
     letter-spacing: -0.03em;
     text-transform: uppercase;
@@ -86,5 +88,6 @@
     font-size: 24px;
     line-height: 113.5%;
     color: #1D1A23;
+    font-size: calc(17px + 7 * (100vw / 1440));
   }
 }
