@@ -1,6 +1,6 @@
 
 .exp {
-  padding-bottom: 197px;
+  margin-bottom: 323px;
   height: 100vh;
   &-wrap {
     display: flex;
@@ -8,14 +8,14 @@
     align-items: center;
   }
   &-text {
-    max-width: 1200px;
+
   }
   &-image {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     img {
-      max-width: 1101.31px;
+      
     }
   }
   &-title {
@@ -24,10 +24,8 @@
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: #1D1A23;
-    // max-width: 470px;
     margin-bottom: 35px;
     font-size: calc(38px + 80 * (100vw / 2367));
-    // font-size: calc(16px + 10 * (100vw / 2367));
   }
   &-descr {
     font-weight: normal;

@@ -21,8 +21,6 @@ span {
     padding-left: 40px;
     padding-right: 40px;
 }
-
-
 @import 'blocks/header';
 @import 'blocks/exp';
 @import 'blocks/partner';
@@ -30,20 +28,5 @@ span {
 
 
 
-@media (max-width: 767px){
-    .nav {
-        &-list {
-            &-item {
-                a {
-                    font-size: calc(16px + (10 + 10 * 0.7) * ((100vw - 320px) / 2367));
-                }
-            }
-        }
-    }
-    .exp {
-        &-title {
-            font-size: calc(38px + (80 + 80 * 0.7) * ((100vw - 320px) / 2367));
-        }
-    }
-   }
+
 @import 'base/media';
