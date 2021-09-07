@@ -12,6 +12,7 @@
 }
 @media (max-width: 1440px) {
   .nav {
+    padding: 43px 0px 0px 0px;
     &-logo {
       img {
         max-width: 140px;
@@ -19,6 +20,10 @@
     }
     &-list {
       &-item {
+        margin-right: 69px;
+        a {
+          font-size: calc(12px + 8 * (100vw / 2560));
+        }
         &__sale {
           font-size: 12px;
           width: 46px;
@@ -28,10 +33,28 @@
     }
     &-social {
       &__link {
+        margin-right: 40px;
         img {
           width: 24px;
         }
       }
+    }
+  }
+  .header {
+    padding-top: 170px;
+    &-title {
+      font-size: calc(38px + 99 * (100vw / 2560));
+    }
+    h3 {
+      font-size: calc(16px + 15 * (100vw / 2560));
+    }
+  }
+  .exp {
+    &-title {
+      font-size: calc(38px + 67 * (100vw / 2560));
+    }
+    &-descr {
+      font-size: calc(16px + 5 * (100vw / 2560));
     }
   }
 }
@@ -103,16 +126,21 @@
       display: none;
     }
   }
+  // adaptive text
   .header {
     &-title {
-      font-size: calc(31px + (113 + 113 * 0.7) * ((100vw - 320px) / 2367));
+      font-size: calc(37px + (100 + 100 * .7) * ((100vw - 320px)/ 2560));
+    }
+    h3 {
+      font-size: calc(16px + (16 + 16 * 0.7) * ((100vw - 320px) / 2560));
     }
   }
   .exp {
       &-title {
-          font-size: calc(36px + (80 + 80 * 0.7) * ((100vw - 320px) / 2367));
+          font-size: calc(38px + (72 + 72 * 0.7) * ((100vw - 320px) / 2560));
       }
   }
+  // adaptive text end
 }
 @media (max-width: 576px)  { //320
   .nav {

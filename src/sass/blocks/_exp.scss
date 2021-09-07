@@ -15,7 +15,7 @@
     justify-content: flex-end;
     align-items: center;
     img {
-      
+      max-width: 996px;
     }
   }
   &-title {
@@ -25,7 +25,7 @@
     text-transform: uppercase;
     color: #1D1A23;
     margin-bottom: 35px;
-    font-size: calc(38px + 80 * (100vw / 2367));
+    font-size: calc(38px + 72 * (100vw / 2560));
   }
   &-descr {
     font-weight: normal;
@@ -33,9 +33,9 @@
     line-height: 162%;
     letter-spacing: -0.015em;
     color: #1D1A23;
-    font-size: calc(16px + 14 * (100vw / 2367));
+    font-size: calc(16px + 10 * (100vw / 2560));
     p {
-      max-width: 855px;
+      max-width: 697px;
     }
   }
 }

@@ -1,20 +1,21 @@
-
 .nav {
-  padding: 44px 0px;
+  padding: 64px 0px 0px 0px;
   &-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   &-logo {
-
+    img {
+      max-width: 200px;
+    }
   }
   &-list {
     display: flex;
     justify-content: center;
     align-items: center;
     &-item {
-      margin-right: 69px;
+      margin-right: 97px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -24,18 +25,18 @@
       a {
         font-weight: normal;
         font-size: 26.3px;
-        font-size: calc(14px + 10 * (100vw / 2367));
+        font-size: calc(14px + 10 * (100vw / 2560));
         line-height: 111%;
         color: #1D1A23;
       }
       &__sale {
         cursor: default;
         font-weight: bold;
-        font-size: 19.725px;
+        font-size: 20px;
         line-height: 111%;
         color: #FFFFFF;
-        width: 75.61px;
-        height: 34.52px;
+        width: 78px;
+        height: 35px;
         background: #FA4A4A;
         display: flex;
         justify-content: center;
@@ -46,20 +47,19 @@
   }
   &-social {
     &__link {
-      margin-right: 44px;
+      margin-right: 63px;
       &:last-child {
         margin-right: 0;
       }
       img {
-        
+        max-width: 40px;
       }
     }
   }
 }
 .header {
   height: 100vh;
-  padding-top: calc(173px - 44px);
-  padding-bottom: 328px;
+  padding-top: 267px;
   &-wrap {
     display: flex;
     justify-content: center;
@@ -67,14 +67,12 @@
     flex-direction: column;
   }
   &-name {
-    margin-bottom: 26px;
+    margin-bottom: 25px;
   }
   &-title {
-    margin-bottom: 21px;
+    margin-bottom: 25px;
     font-weight: 600;
-    // font-size: 92px;
-    // font-size: 4vw;
-    font-size: calc(38px + 113 * (100vw / 2367));
+    font-size: calc(38px + 102 * (100vw / 2560));
     line-height: 111%;
     letter-spacing: -0.03em;
     text-transform: uppercase;
@@ -86,9 +84,8 @@
   }
   h3 {
     font-weight: normal;
-    // font-size: 24px;
     line-height: 113.5%;
     color: #1D1A23;
-    font-size: calc(16px + 23 * (100vw / 2367));
+    font-size: calc(16px + 16 * (100vw / 2560));
   }
 }
