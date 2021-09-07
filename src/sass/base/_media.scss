@@ -10,30 +10,7 @@
     }
   }
 }
-
-@media (max-width: 1400px) { //1200
-  .exp {
-    margin-bottom: 197px;
-    &-wrap {
-      flex-direction: column-reverse;
-      justify-content: center;
-      align-items: center;
-    }
-    &-text {
-      margin-top: 37px;
-    }
-    &-image {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      img {
-        width: 75%;
-      }
-    }
-  }
-  .patner {
-    margin-bottom: 84px;
-  }
+@media (max-width: 1440px) {
   .nav {
     &-logo {
       img {
@@ -57,6 +34,31 @@
       }
     }
   }
+}
+@media (max-width: 1400px) { //1200
+  .exp {
+    margin-bottom: 197px;
+    &-wrap {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+    &-text {
+      margin-top: 37px;
+    }
+    &-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 75%;
+      }
+    }
+  }
+  .patner {
+    margin-bottom: 84px;
+  }
+
 }
 
 @media (max-width: 1200px) { //992
