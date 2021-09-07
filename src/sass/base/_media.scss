@@ -11,6 +11,10 @@
   }
 }
 @media (max-width: 1440px) {
+  .container-fluid {
+    padding-left: 40px;
+    padding-right: 40px;
+}
   .nav {
     padding: 43px 0px 0px 0px;
     &-logo {
