@@ -1,6 +1,6 @@
 
 .exp {
-  margin-bottom: 323px;
+  margin-bottom: 314px;
   height: 100vh;
   &-wrap {
     display: flex;
@@ -24,7 +24,7 @@
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: #1D1A23;
-    margin-bottom: 35px;
+    transform: translateY(30px);
     font-size: calc(38px + 72 * (100vw / 2560));
   }
   &-descr {
@@ -34,8 +34,9 @@
     letter-spacing: -0.015em;
     color: #1D1A23;
     font-size: calc(16px + 10 * (100vw / 2560));
+    margin-top: 82px;
     p {
-      max-width: 697px;
+      max-width: 677px;
     }
   }
 }

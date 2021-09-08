@@ -14,8 +14,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 150px;
     &-item {
-      margin-right: 97px;
+      margin-right: 121px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -25,7 +26,7 @@
       a {
         font-weight: normal;
         font-size: 26.3px;
-        font-size: calc(14px + 10 * (100vw / 2560));
+        font-size: calc(16px + 4 * (100vw / 2560));
         line-height: 111%;
         color: #1D1A23;
       }

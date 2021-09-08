@@ -21,10 +21,15 @@ span {
     padding-left: 148px;
     padding-right: 148px;
 }
+.container {
+    width: 100%;
+    padding-left: 240px;
+    padding-right: 240px;
+}
 @import 'blocks/header';
 @import 'blocks/exp';
 @import 'blocks/partner';
-
+@import 'blocks/focus';
 
 
 
