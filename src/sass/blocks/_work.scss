@@ -1,0 +1,29 @@
+.work {
+  padding-top: 338px;
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &-title {
+    font-weight: 600;
+    font-size: 110px;
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #131218;
+    margin-bottom: 114px;
+  }
+  &-column {
+
+  }
+  &-item {
+    margin-bottom: 66px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    img {
+
+    }
+  }
+}

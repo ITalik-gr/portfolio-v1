@@ -1,0 +1,46 @@
+
+.footer {
+  padding-bottom: 61px;
+  margin-top: -1px;
+  background: #131218;
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-name {
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 111%;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+  }
+  &-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-email {
+    font-size: 26px;
+    line-height: 107%;
+    letter-spacing: -.02em;
+    color: #fff;
+    margin-right: 112px;
+  }
+  &-link {  
+    margin-right: 62px;
+    &:last-child {
+      margin-right: 0;
+    }
+    svg {
+      path {
+        stroke: #FFFFFF;
+      }
+    }
+    &__wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

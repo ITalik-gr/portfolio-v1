@@ -2,7 +2,7 @@
 .focus {
   background: #131218;
   mix-blend-mode: normal;
-  padding: 95px 148px 95px 148px;
+  padding: 95px 148px 109px 148px;
   &-card {
     background: #FFFFFF;
     border-radius: 8.21875px;
@@ -20,10 +20,25 @@
     font-size: calc(32px + 46 * (100vw / 2560));
   }
   &-pepe {
-
+    position: relative;
+    &:hover {
+      .focus-image {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
   }
   &-image {
-
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    position: absolute;
+    top: -100px;
+    right: -110px;
+    transition: .3s all;
+    img {
+      max-width: 184px;
+    }
   }
   &-btn {
     width: 203px;
@@ -32,6 +47,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover {
+      .focus-image {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
     &::after,
     &::before {
       content: '';
@@ -57,6 +78,7 @@
       height: 58px;
       background: #2F2CE9;
       border-radius: 100%;
+      z-index: 10;
       position: relative;
     }
   }
