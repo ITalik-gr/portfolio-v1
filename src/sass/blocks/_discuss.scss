@@ -16,7 +16,7 @@
     max-width: 1188px;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    
+    font-size: calc(38px + 102 * (100vw / 2560));
     color: #FFFFFF;
   }
   &-btn {

@@ -19,14 +19,14 @@
     text-transform: uppercase;
     color: #131218;
     max-width: 1412px;
-    
+    font-size: calc(38px + 102 * (100vw / 2560));
   }
   &-descr {
     font-size: 26px;
     line-height: 162%;
     letter-spacing: -0.015em;
     color: #34334F;
-
+    font-size: calc(16px + 10 * (100vw / 2560));
     p {
       max-width: 850px;
     }

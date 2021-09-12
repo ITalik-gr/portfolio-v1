@@ -1,8 +1,11 @@
-// $(document).bind( 'mousewheel', function (e) { 
-//   var nt = $(document.body).scrollTop()-(e.deltaY*e.deltaFactor*200); 
-//   e.preventDefault(); 
-//   e.stopPropagation(); 
-//   $(document.body).stop().animate( { 
-//        scrollTop : nt 
-//    } , 300 , 'easeInOutCubic' );  
-// } )
+
+
+let nav_toggle = document.querySelector('.nav-toggle'),
+    menu = document.querySelector('.menu');
+
+console.log(nav_toggle);
+
+nav_toggle.addEventListener('click', function() {
+  nav_toggle.classList.toggle('nav-toggle-active')
+  menu.classList.toggle('menu-active')
+});
