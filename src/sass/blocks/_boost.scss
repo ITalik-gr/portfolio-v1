@@ -45,5 +45,53 @@
     min-height: 132px;
     border: 2px solid #131218;
     border-radius: 70.6813px;
+    position: relative;
+    transition: .3s all;
+    overflow: hidden;
+    &_1 {
+      background-color: #030313;
+      transition: .4s cubic-bezier(.42,.0,.58,1);
+    }
+    &_2 {
+      background-color: #2F2CE9;
+      transition: .5s cubic-bezier(.42,.0,.58,1);
+    }
+    &_1,
+    &_2 {
+      width: 0%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 70.6813px;
+    }
+    &::after {
+      left: 12%;
+    }
+    &::before {
+      right: 12%;
+    }
+    &::before,
+    &::after {
+      content: '🔥';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0;
+      transition: .32s cubic-bezier(.25,.1,.25,1);
+    }
+    &:hover {
+      color: #fff;
+      transition: .32s cubic-bezier(.25,.1,.25,1);
+      &::before,
+      &::after {
+        opacity: 1;
+      }
+      .boost-btn_1,
+      .boost-btn_2 {
+        width: 100%;
+      }
+    }
   }
 }
