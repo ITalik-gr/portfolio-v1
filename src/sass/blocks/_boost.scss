@@ -85,7 +85,7 @@
     &:hover {
       color: #fff;
       border: 1px solid transparent;
-      transition: .32s color cubic-bezier(.25,.1,.25,1), .5s border ease;
+      transition: .32s color cubic-bezier(.25,.1,.25,1), .4s border cubic-bezier(.25,.1,.25,1);
       &::before,
       &::after {
         opacity: 1;
