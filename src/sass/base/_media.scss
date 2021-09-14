@@ -63,7 +63,7 @@
     &-btn {
       width: 356px;
       height: 356px;
-      span {
+      &_hover {
         width: 246px;
         height: 246px;
         font-size: 22px;
@@ -270,7 +270,7 @@
     &-btn {
       width: 296px;
       height: 296px;
-      span {
+      &_hover {
         width: 216px;
         height: 216px;
         font-size: 22px;
@@ -641,7 +641,7 @@
     &-btn {
       width: 270px;
       height: 270px;
-      span {
+      &_hover {
         width: 198px;
         height: 198px;
         font-size: 22px;

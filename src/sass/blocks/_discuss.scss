@@ -26,13 +26,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    span {
-      font-weight: 600;
-      font-size: 36.1625px;
-      line-height: 111%;
-      letter-spacing: -0.02em;
-      text-transform: uppercase;
-      color: #FFFFFF;
+    cursor: pointer;
+    transition: .3s transform cubic-bezier(.25,.1,.25,1);
+    position: relative;
+    &_1 {
+      background-color: #6D6AFF;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(.25,.1,.25,1);
+      transition-duration: .40s;
+      transition-delay: 0s;
+    }
+    &_2 {
+      background-color: #000000;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(.25,.1,.25,1);
+      transition-duration: 0.45s;
+      transition-delay: 0.05s;
+    }
+    &_3 {
+      background-color: #2F2CE9;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(.25,.1,.25,1);
+      transition-duration: .5s;
+      transition-delay: 0.1ms;
+    }
+    &_1, &_2, &_3 {
+      position: absolute;
+      border-radius: 100%;
+      width: 0%;
+      height: 0%;
+      transform: scale(0);
+    }
+    &_hover {
       width: 355.05px;
       height: 355.05px;
       background: #2F2CE9;
@@ -60,6 +85,37 @@
         border: 1.64375px solid rgba(7, 55, 227, 0.212);
         width: 486.55px;
         height: 486.55px;
+      }
+    }
+    &__text {
+      font-weight: 600;
+      font-size: 36.1625px;
+      line-height: 111%;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      z-index: 20;
+    }
+    &:hover {
+      transform: scale(1.1);
+      .discuss {
+        &-btn {
+          &_1 {
+
+          }
+          &_2 {
+
+
+          }
+          &_3 {
+
+          }
+          &_1, &_2, &_3 {
+            width: 355.05px;
+            height: 355.05px;
+            transform: scale(1);
+          }
+        }
       }
     }
   }
