@@ -84,8 +84,8 @@
     }
     &:hover {
       color: #fff;
-      border: 1px solid #2f2ce9;
-      transition: .32s color cubic-bezier(.25,.1,.25,1), .4s border cubic-bezier(.25,.1,.25,1);
+      border: 2px solid #2f2ce9;
+      transition: .32s color cubic-bezier(.25,.1,.25,1), .48s border cubic-bezier(.25,.1,.25,1);
       &::before,
       &::after {
         opacity: 1;
