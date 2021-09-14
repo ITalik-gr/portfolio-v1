@@ -57,20 +57,22 @@
     &::before {
       content: '';
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      // top: 50%;
+      // left: 50%;
+      // transform: translate(-50%, -50%);
       border-radius: 100%;
     }
     &::before { // внутрений круг
       width: 133px;
       height: 132px;
       border: 1.64375px solid rgba(47, 44, 233, 0.205);
+      animation: focus-btn 3s infinite ease;
     }
     &::after { // внешний круг
       border: 1.64375px solid rgba(47, 44, 233, 0.103);
       width: 203px;
       height: 202px;
+      animation: focus-btn 3s infinite ease;
     }
     span {
       display: block;
@@ -81,5 +83,20 @@
       z-index: 10;
       position: relative;
     }
+  }
+}
+
+@keyframes focus-btn {
+  0% {
+    transform:  scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform:  scale(0.9);
+    opacity: 0.64;
+  }
+  100% {
+    transform:  scale(1) ;
+    opacity: 1;
   }
 }

@@ -63,10 +63,20 @@
     &-btn {
       width: 356px;
       height: 356px;
+      &__text {
+        font-size: 22px;
+      }
+      &:hover {
+        .discuss {
+          &-btn_1, &-btn_2, &-btn_3 {
+            width: 241px;
+            height: 241px;
+          }
+        }
+      }
       &_hover {
         width: 246px;
         height: 246px;
-        font-size: 22px;
         &::after { // внешний
           width: 356px;
           height: 356px;
@@ -270,10 +280,17 @@
     &-btn {
       width: 296px;
       height: 296px;
+      &:hover {
+        .discuss {
+          &-btn_1, &-btn_2, &-btn_3 {
+            width: 211px;
+            height: 211px;
+          }
+        }
+      }
       &_hover {
         width: 216px;
         height: 216px;
-        font-size: 22px;
         &::after { // внешний
           width: 296px;
           height: 296px;
@@ -641,6 +658,15 @@
     &-btn {
       width: 270px;
       height: 270px;
+      height: 296px;
+      &:hover {
+        .discuss {
+          &-btn_1, &-btn_2, &-btn_3 {
+            width: 193px;
+            height: 193px;
+          }
+        }
+      }
       &_hover {
         width: 198px;
         height: 198px;
