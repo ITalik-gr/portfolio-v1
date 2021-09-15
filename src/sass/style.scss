@@ -35,6 +35,18 @@ span {
         padding-right: 283px;
     }
 }
+.text__animation_1 {
+    transform: rotate(4deg) translateY(10px);
+    position: relative;
+}
+.text-anim {
+    transform: rotate(0deg) translateY(0px);
+    transition: 1s all;
+}
+.opacity-animate {
+    opacity: 1!important;
+    transition: .5s all;
+}
 .preloader {
     width: 100%;
     height: 100%;
