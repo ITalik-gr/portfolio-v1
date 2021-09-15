@@ -20,7 +20,7 @@ window.onload = function () {
     text_anim();
     opacity();
   }, 3500)
- 
+
 }
 
 let nav_toggle = document.querySelector('.nav-toggle'),
@@ -33,5 +33,5 @@ nav_toggle.addEventListener('click', function() {
   menu.classList.toggle('menu-active')
 });
 
-AOS.init();
 
+console.log('Frontend developing by italik');

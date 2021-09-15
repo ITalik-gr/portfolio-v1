@@ -28,7 +28,7 @@
   .nav {
     &-social {
       &__link {
-      img {
+      svg {
         max-width: 29px;
       }
     }
@@ -91,7 +91,11 @@
   .footer {
     &-name,
     &-email {
-      font-size: 23px;
+      font-size: 21px;
+    }
+    &-dev {
+      font-size: 18px;
+      margin-left: 35px;
     }
   }
 }
@@ -138,7 +142,7 @@
     &-social {
       &__link {
         margin-right: 40px;
-        img {
+        svg {
           width: 24px;
         }
       }
@@ -311,6 +315,10 @@
       font-size: 16px;
       margin-right: 50px;
     }
+    &-dev {
+      font-size: 16px;
+      margin-left: 50px;
+    }
     &-link {
       margin-right: 40px;
       svg {
@@ -319,6 +327,23 @@
       &-wrap {
         
       }
+    }
+  }
+  .main-404 {
+    padding: 236px 0px;
+    &__title {
+      font-size: 92px;
+    }
+    &__subtitle {
+      font-size: 16px;
+      margin-bottom: 67px;
+    }
+    &__btn {
+      font-size: 18px;
+      width: 274px;
+      height: 80px;
+      border: 1px solid #131218;
+      border-radius: 43px;
     }
   }
 }
@@ -438,6 +463,15 @@
     &-title {
       text-align: center;
       margin-bottom: 50px;
+    }
+  }
+  .footer {
+    &-dev {
+      font-size: 13px;
+      margin-left: 25px;
+    }
+    &-email {
+      margin-right: 30px;
     }
   }
 }
@@ -688,6 +722,16 @@
     &-social {
       margin-bottom: 33px;
     }
+    &-dev {
+      margin-bottom: 20px;
+      margin-left: 0;
+      font-size: 15px;
+    }
+    &-block-wrap {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .menu {
@@ -709,12 +753,31 @@
           margin-bottom: 32px;
         }
         &__link {
-          img {
+          svg {
             max-width: 32px;
             width: 32px;
           }
         }
       }
+    }
+  }
+
+  .main-404 {
+    padding: 134px 0px;
+    &__title {
+      font-size: 64px;
+      margin-bottom: 6px;
+    }
+    &__subtitle {
+      font-size: 14px;
+      margin-bottom: 91px;
+    }
+    &__btn {
+      font-size: 18px;
+      width: 288px;
+      height: 80px;
+      border: 1px solid #131218;
+      border-radius: 43px;
     }
   }
 }

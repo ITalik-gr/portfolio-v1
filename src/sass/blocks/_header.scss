@@ -89,12 +89,17 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: .3s all;
       &:last-child {
         margin-right: 0;
       }
       &:hover {
+        transform: translateX(10px);
         a {
-          
+          color: #2F2CE9;
+          &::before {
+            opacity: 1;
+          }
         }
       }
       a {
@@ -103,6 +108,18 @@
         font-size: calc(16px + 4 * (100vw / 2560));
         line-height: 111%;
         color: #1D1A23;
+        transition: .3s all;
+        &::before {
+          content: '';
+          position: absolute;
+          left: -23px;
+          top: calc(50% - 0.5px);
+          width: 18px;
+          height: 1px;
+          background-color: #2F2CE9;
+          opacity: 0;
+          transition: .3s all;
+        }
       }
       &__sale {
         cursor: default;
@@ -139,7 +156,15 @@
       &:last-child {
         margin-right: 0;
       }
-      img {
+      &:hover {
+        svg {
+          path {
+            stroke: #0E68EF;
+            transition: .3s all;
+          }
+        }
+      }
+      svg {
         max-width: 40px;
       }
     }

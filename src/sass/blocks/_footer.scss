@@ -8,12 +8,30 @@
     justify-content: space-between;
     align-items: center;
   }
+  &-block {
+    &-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
   &-name {
     font-weight: normal;
     font-size: 26px;
     line-height: 111%;
     letter-spacing: -0.02em;
     color: #FFFFFF;
+  }
+  &-dev {
+    font-size: 26px;
+    line-height: 111%;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin-left: 52px;
+    transition: .3s all;
+    &:hover {
+      color: #0E68EF;
+    }
   }
   &-social {
     display: flex;
@@ -26,6 +44,10 @@
     letter-spacing: -.02em;
     color: #fff;
     margin-right: 112px;
+    transition: .4s all;
+    &:hover {
+      color: #0E68EF;
+    }
   }
   &-link {  
     margin-right: 62px;
@@ -35,6 +57,14 @@
     svg {
       path {
         stroke: #FFFFFF;
+        transition: .4s all;
+      }
+    }
+    &:hover {
+      svg {
+        path {
+          stroke: #0E68EF;
+        }
       }
     }
     &__wrap {
