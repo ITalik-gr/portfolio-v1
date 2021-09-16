@@ -409,6 +409,15 @@
   .boost {
     padding: 250px 0 240px 0;
   }
+  .preloader {
+    &-title {
+      font-size: 82px;
+      line-height: 110%;
+    }
+    &-timer {
+      font-size: 28px;
+    }
+    }
 }
 
 @media (max-width: 992px) { //768 
@@ -475,6 +484,19 @@
       margin-right: 30px;
     }
   }
+  .preloader {
+    padding: 26px 20px 30px 20px;
+    &-title {
+      font-size: 62px;
+      line-height: 110%;
+    }
+    &-timer {
+      font-size: 28px;
+      font-size: 24px;
+      bottom: 20px;
+      right: 20px;
+    }
+    }
 }
 
 @media (max-width: 768px) { //576 
@@ -779,6 +801,19 @@
       height: 80px;
       border: 1px solid #131218;
       border-radius: 43px;
+    }
+  }
+
+  .preloader {
+    padding: 10px 15px 10px 15px;
+    &-title {
+      font-size: 41px;
+      max-width: 365px;
+    }
+    &-timer {
+      font-size: 20px;
+      bottom: 10px;
+      right: 15px;
     }
   }
 }

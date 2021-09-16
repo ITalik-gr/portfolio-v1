@@ -13,9 +13,9 @@ let text1 = document.querySelector('.header-name'),
       nav.classList.add('opacity-animate')
     }
 window.onload = function () {
-  let ab = setTimeout(function() {
-    document.querySelector('.preloader').classList.add('preloader-none');
-  }, 2800)
+  // let ab = setTimeout(function() {
+  //   document.querySelector('.preloader').classList.add('preloader-none');
+  // }, 2800)
   let aa = setTimeout(function() {
     text_anim();
     opacity();
