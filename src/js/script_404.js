@@ -7,7 +7,7 @@ function opacity () {
 window.onload = function () {
 let ab = setTimeout(function() {
 document.querySelector('.preloader').classList.add('preloader-none');
-}, 2800)
+}, 2000)
 let aa = setTimeout(function() {
 opacity();
 }, 3500)

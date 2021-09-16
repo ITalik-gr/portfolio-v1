@@ -13,7 +13,7 @@ function timer() {
 }
 
 function PercentageAnimator() {
-  this.animationSpeed = 40;
+  this.animationSpeed = 50;
   this.curPercentage = 0;
   this.targetPercentage = 0;
   this.outputSelector = ".preloader-timer";
