@@ -13,8 +13,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    &:hover {
+      cursor: url(../../img/me.svg), pointer;
+    }
     img {
       max-width: 996px;
+
     }
   }
   &-title {
