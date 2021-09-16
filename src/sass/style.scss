@@ -151,6 +151,12 @@ span {
         border-left: 2000px solid #130EFF;
     }
 }
+#follower{
+    position : absolute;
+    background-color : red;
+    color : white;
+    padding : 10px;
+  }
 @import 'blocks/header';
 @import 'blocks/exp';
 @import 'blocks/partner';
