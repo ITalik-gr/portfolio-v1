@@ -151,12 +151,25 @@ span {
         border-left: 2000px solid #130EFF;
     }
 }
-#follower{
-    position : absolute;
-    background-color : red;
-    color : white;
-    padding : 10px;
-  }
+.box {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 1px solid #444444;
+    overflow: hidden;
+}
+
+.box-pointer {
+    position: absolute;
+}
+.box-pointer-hidden {
+    display: none;
+}
+.box-pointer2 {
+    left: 0;
+    right: 0;
+    transition: 0ms cubic-bezier(0.1, 0.57, 0.1, 1);
+}
 @import 'blocks/header';
 @import 'blocks/exp';
 @import 'blocks/partner';

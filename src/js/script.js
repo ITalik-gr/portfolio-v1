@@ -1,4 +1,78 @@
 
+// Вариант 1
+(function () {
+  'use strict';
+
+  var boxElem = document.getElementById('box1');
+  var pointerElem = document.getElementById('pointer1');
+
+  function onMouseMove(event) {
+      var mouseX = event.pageX;
+      var mouseY = event.pageY;
+      var crd = boxElem.getBoundingClientRect();
+      var activePointer = crd.left <= mouseX && mouseX <= crd.right && crd.top <= mouseY && mouseY <= crd.bottom;
+
+      requestAnimationFrame(function movePointer() {
+          if (activePointer) {
+              pointerElem.classList.remove('box-pointer-hidden');
+              pointerElem.style.left = Math.floor(mouseX) + 'px';
+              pointerElem.style.top = Math.floor(mouseY) + 'px';
+          } else {
+              pointerElem.classList.add('box-pointer-hidden');
+          }
+      });
+  }
+
+  function disablePointer() {
+      requestAnimationFrame(function hidePointer() {
+          pointerElem.classList.add('box-pointer-hidden');
+      });
+  }
+
+  boxElem.addEventListener('mousemove', onMouseMove, false);
+  boxElem.addEventListener('mouseleave', disablePointer, false);
+
+})();
+
+
+
+// Вариант 2
+(function () {
+  'use strict';
+
+  var boxElem = document.getElementById('box2');
+  var pointerElem = document.getElementById('pointer2');
+
+  function onMouseMove(event) {
+      var mouseX = event.pageX;
+      var mouseY = event.pageY;
+      var crd = boxElem.getBoundingClientRect();
+
+      var activePointer = crd.left <= mouseX && mouseX <= crd.right && crd.top <= mouseY && mouseY <= crd.bottom;
+
+      if (crd.left <= mouseX && mouseX <= crd.right && crd.top <= mouseY && mouseY <= crd.bottom) {
+          if (pointerElem.classList.contains('box-pointer-hidden')) {
+              pointerElem.classList.remove('box-pointer-hidden');
+          }
+
+          pointerElem.style.transform = 'translate3d(' + mouseX + 'px, ' + mouseY + 'px, 0px)';
+
+      } else {
+          pointerElem.classList.add('box-pointer-hidden');
+      }
+  }
+
+  function disablePointer() {
+      requestAnimationFrame(function hidePointer() {
+          pointerElem.classList.add('box-pointer-hidden');
+      });
+  }
+
+  boxElem.addEventListener('mousemove', onMouseMove, false);
+  boxElem.addEventListener('mouseleave', disablePointer, false);
+
+})();
+
 
 let text1 = document.querySelector('.header-name'),
     text2 = document.querySelector('.header-title'),
@@ -40,25 +114,4 @@ console.log('Frontend developing by italik');
 
 //!
 
-$(document).ready(function(){
-  $("#follower").hover(function(){
-    var mouseX = 0, mouseY = 0;
-$(document).mousemove(function(e){
-   mouseX = e.pageX;
-   mouseY = e.pageY; 
-});
 
-// cache the selector
-var follower = $("#follower");
-var xp = 0, yp = 0;
-var loop = setInterval(function(){
-    // change 12 to alter damping higher is slower
-    xp += (mouseX - xp) / 12;
-    yp += (mouseY - yp) / 12;
-    follower.css({left:xp, top:yp});
-    
-}, 30);
-    }, function(){
-      $(this).off('mousemove').css("background-color", "pink");
-  });
-});
