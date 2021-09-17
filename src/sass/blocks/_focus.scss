@@ -2,22 +2,25 @@
 .focus {
   background: #131218;
   mix-blend-mode: normal;
-  padding: 95px 148px 109px 148px;
-  &-card {
-    background: #FFFFFF;
-    border-radius: 8.21875px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 260px 473px 260px 120px;
-  }
+  padding: 251px 148px 251px 148px;
+  // &-card {
+  //   background: #131218;
+  //   border-radius: 8.21875px;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   padding: 260px 473px 260px 120px;
+  // }
   &-title {
+    max-width: 1317px;
+    font-size: calc(32px + 98 * (100vw / 2560));
     font-weight: 600;
-    line-height: 135.5%;
-    letter-spacing: -0.02em;
-    color: #131218;
-    max-width: 988px;
-    font-size: calc(32px + 46 * (100vw / 2560));
+    font-size: 130px;
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
   }
   &-pepe {
     position: relative;

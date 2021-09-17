@@ -1,7 +1,7 @@
 let text1 = document.querySelector('.header-name'),
     text2 = document.querySelector('.header-title'),
     text3 = document.querySelector('.header-subtitle'),
-    nav = document.querySelector('.nav');
+    nav = document.querySelector('.nav-wrap');
 
     function text_anim () {
       text1.classList.add('text-anim');
