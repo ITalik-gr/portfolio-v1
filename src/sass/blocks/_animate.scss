@@ -112,8 +112,9 @@
 //   opacity: 1;
 // }
 
+
 [data-aos="left-rotate"] {
-  transform: rotate(3deg) translateY(20px);
+  transform: rotate(4deg) translateY(50px);
   transform-origin: 0 50%;
   opacity: 0;
 }
@@ -122,6 +123,8 @@
   transform-origin: 0 50%;
   opacity: 1;
 }
+
+
 [data-aos] {
   body[data-aos-easing="left-rotate"] &,
   &[data-aos][data-aos-easing="left-rotate"] {
@@ -145,6 +148,68 @@
   opacity: 1;
 }
 
+
+[data-aos="partner"] {
+  transform: translateY(70px);
+  opacity: 0;
+}
+[data-aos="partner"].aos-animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+[data-aos="work-image"] {
+  transform: rotate(3deg) translateY(70px);
+  opacity: 0;
+}
+[data-aos="work-image"].aos-animate {
+  transform: rotate(0deg) translateY(0);
+  opacity: 1;
+}
+
+
+
+[data-aos="work-image"] {
+  transform: rotate(3deg) translateY(70px);
+  opacity: 0;
+}
+[data-aos="work-image"].aos-animate {
+  transform: rotate(0deg) translateY(0);
+  opacity: 1;
+}
+
+[data-aos="top-opacity"] {
+  transform: translateY(80px);
+  opacity: 0;
+}
+[data-aos="top-opacity"].aos-animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+[data-aos="discuss-btn"] {
+  transform: rotate(3deg) scale(0.6);
+  opacity: 0;
+}
+[data-aos="discuss-btn"].aos-animate {
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+}
+
+
+@media (max-width: 1440px) {
+  
+[data-aos="left-rotate"] {
+  transform: rotate(3deg) translateY(20px);
+  transform-origin: 0 50%;
+  opacity: 0;
+}
+[data-aos="left-rotate"].aos-animate {
+  transform: rotate(0deg) translateY(0);
+  transform-origin: 0 50%;
+  opacity: 1;
+}
 [data-aos="partner"] {
   transform: translateY(30px);
   opacity: 0;
@@ -180,13 +245,5 @@
   transform: translateY(0);
   opacity: 1;
 }
-
-[data-aos="discuss-btn"] {
-  transform: rotate(3deg) scale(0.6);
-  opacity: 0;
-}
-[data-aos="discuss-btn"].aos-animate {
-  transform: rotate(0deg) scale(1);
-  opacity: 1;
 }
 // AOS annimate Close

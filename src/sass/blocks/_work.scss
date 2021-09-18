@@ -23,11 +23,18 @@
   &-item {
     margin-bottom: 66px;
     width: 100%;
+    &:hover {
+      cursor: none;
+      img {
+        filter: brightness(0.7);
+      }
+    }
     &:last-child {
       margin-bottom: 0;
     }
     img {
       max-width: 100%;
+      z-index: 2;
     }
   }
 }

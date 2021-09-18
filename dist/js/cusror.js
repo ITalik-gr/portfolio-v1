@@ -39,6 +39,7 @@ images.forEach(image => {
   image.addEventListener("mouseover", function () {
     ballMessage.classList.add("visible")
     ballMessage.innerHTML = image.getAttribute("data-hover")
+    cursorTag.classList.add('cursore-none')
   })
   
   image.addEventListener("mouseout", function () {
@@ -56,4 +57,5 @@ imagesWork.forEach(imageWork => {
   imageWork.addEventListener("mouseout", function () {
     ballMessageWork.classList.remove("visible")
   })
+
 });

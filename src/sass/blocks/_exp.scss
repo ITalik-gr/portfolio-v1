@@ -12,7 +12,9 @@
     align-items: center;
     img {
       max-width: 996px;
-
+      &:hover {
+        cursor: none;
+      }
     }
   }
   &-title {
