@@ -28,7 +28,7 @@
     color: #34334F;
     font-size: calc(16px + 10 * (100vw / 2560));
     p {
-      max-width: 850px;
+      max-width: 760px;
     }
   }
   &-btn {
@@ -93,38 +93,10 @@
       .boost-btn_1,
       .boost-btn_2 {
         width: 100%;
-        // animation: log 1s cubic-bezier(.25,.1,.25,1);
-        // animation-iteration-count: 3;
-      }
-      .boost-btn_1 {
-        // animation: loga 1s cubic-bezier(.25,.1,.25,1) normal;
       }
       .boost-btn_2 {
-        // animation: log 1s cubic-bezier(.25,.1,.25,1) normal;
-        // animation-delay: 0.1s;
         left: 0
       }
     }
   }
 }
-
-// @keyframes log {
-//   0% {
-//     width: 0%;
-//     transition: .5s cubic-bezier(.42,.0,.58,1);
-//   }
-//   100% {
-//     width: 100%;
-//     transition: .5s cubic-bezier(.42,.0,.58,1);
-//   }
-// }
-// @keyframes loga {
-//   0% {
-//     width: 0%;
-//     transition: .7s cubic-bezier(.42,.0,.58,1);
-//   }
-//   100% {
-//     width: 100%;
-//     transition: .7s cubic-bezier(.42,.0,.58,1);
-//   }
-// }

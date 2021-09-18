@@ -1,21 +1,15 @@
 
 .exp {
-  margin-bottom: 314px;
+  margin-bottom: 261px;
   &-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  &-text {
-
-  }
   &-image {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    &:hover {
-      cursor: url(../../img/me.svg), pointer;
-    }
     img {
       max-width: 996px;
 
@@ -37,7 +31,7 @@
     letter-spacing: -0.015em;
     color: #1D1A23;
     font-size: calc(16px + 10 * (100vw / 2560));
-    margin-top: 82px;
+    margin-top: 67px;
     p {
       max-width: 575px;
     }

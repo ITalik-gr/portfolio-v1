@@ -7,7 +7,6 @@
     <title>ui/ux designer</title>
     <meta name="title" content="Заголовок">
     <meta name="description" content="Онисание">
-
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://metatags.io/">
@@ -21,26 +20,31 @@
     <meta property="twitter:description" content="Онисание">
     <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
     <!-- Favicon  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 992px)"">
+    <!-- <link rel="stylesheet" href="css/mobile.css" media="(max-width: 992px)""> -->
     <link rel="stylesheet" href="font/stylesheet.css">
 </head>
 <body>
+
     <div class="preloader">
-        <!-- <div class="preloader-title">
-            Wake up, samurai...
-        </div>
-        <div class="preloader-timer">
-            0%
-        </div> -->
         <div class="preloader-card">
-           <img src="img/logo.svg" alt="" class="preloader-image">
+           <img src="img/preloader-logo.svg" alt="" class="preloader-image">
         </div>
     </div>
     <div class="menu">
         <div class="container-fluid">
             <div class="menu-wrap">
               <div class="menu-card">
+
+                <div class="menu-top">
+                    <div class="menu-logo">
+                        <img src="img/logo-mob.svg" alt="">
+                    </div>
+                    <div class="menu-close">
+                        <span></span>
+                    </div>
+                </div>
                 <ul class="nav-list nav-list__mob">
                     <li class="nav-list-item"><a href="#">Mentoring</a><span class="nav-list-item__sale">SALE</span></li>
                     <li class="nav-list-item"><a href="#">Free 3D Icons</a></li>
@@ -66,18 +70,12 @@
                 <div class="nav-logo">
                     <img src="img/logo.svg" alt="Logo">
                 </div>
-
                 <ul class="nav-list">
                     <li class="nav-list-item"><a href="#">Mentoring</a><span class="nav-list-item__sale">(-50%)</span></li>
                     <li class="nav-list-item"><a href="#">Design Resources</a></li>
                 </ul>
-
                 <div class="nav-social">
-
-                    
-                    
-                    
-                    <a href="#" class="nav-social__link"> 
+                     <a href="#" class="nav-social__link"> 
                         <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M29.7884 7.2561H10.0634C8.24774 7.2561 6.77588 8.72797 6.77588 10.5436V30.2686C6.77588 32.0842 8.24774 33.5561 10.0634 33.5561H29.7884C31.604 33.5561 33.0759 32.0842 33.0759 30.2686V10.5436C33.0759 8.72797 31.604 7.2561 29.7884 7.2561Z" stroke="#1D1A23" stroke-width="1.64375" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M13.3511 18.7625V26.9812" stroke="#1D1A23" stroke-width="1.64375" stroke-linecap="round" stroke-linejoin="round"/>
@@ -118,17 +116,23 @@
     <header class="header">
         <div class="container-fluid">
             <div class="header-wrap">
-                <div class="header-wrapper">
-                    <h3 class="header-name text__animation_1">
-                        Hi! I’m Vadim,
+                <div class="header-block">
+                    <div class="header-wrapper">
+
+                        <h3 class="header-name text__animation_1">
+                            Hi! I’m Vadim,
+                        </h3>
+                        <h1 class="header-title text__animation_2">
+                            ui/ux designer
+                        </h1>
+    
+                    </div>
+    
+                    <h3 class="header-subtitle text__animation_1">
+                        ...for people who live on planet earth
                     </h3>
-                    <h1 class="header-title text__animation_2">
-                        ui/ux designer
-                    </h1>
                 </div>
-                <h3 class="header-subtitle text__animation_1">
-                    ...for people who live on planet earth
-                </h3>
+
             </div>
         </div>
     </header>
@@ -136,10 +140,10 @@
         <div class="container">
             <div class="exp-wrap">
                     <div class="exp-text">
-                        <h4 class="exp-title">
+                        <h4 data-aos-easing="left-rotate" data-aos="left-rotate" class="exp-title">
                             5+ years of <br> experience
                         </h4>
-                        <div class="exp-descr">
+                        <div data-aos-easing="left-rotate" data-aos="left-rotate" class="exp-descr">
                             <p>
                                 I have a passion for designing interfaces that solve user problems. And I will gladly solve your problem because this world needs to be made better.
                                 <br><br>
@@ -147,48 +151,36 @@
                             </p>
                         </div>
                     </div>
-                    .<div id="circle"></div>
                     <div class="exp-image">
-                        <img src="img/expirienc-image.webp" alt="">
+                        <img   data-aos-easing="left-rotate" data-aos="rotate-scale" data-hover="It’s me 👋" src="img/expirienc-image.webp" alt="">
                     </div>
             </div>
         </div>
     </div>
     <div class="partner">
-        <div class="container-fluid">
+        <div class="container">
             <div class="partner-wrap">
-                <div class="partner-card">
+                <div data-aos="partner" data-aos-easing="Ease-Both" data-aos-delay="700" class="partner-card">
                     <img src="icons/lg.png" alt="">
                 </div>
-                <div class="partner-card">
+                <div data-aos="partner" data-aos-easing="Ease-Both" data-aos-delay="800" class="partner-card">
                     <img src="icons/dtek.png" alt="">
                 </div>
-                <div class="partner-card">
+                <div data-aos="partner" data-aos-easing="Ease-Both" data-aos-delay="900" class="partner-card">
                     <img src="icons/logom.svg" alt="">
                 </div>
-                <div class="partner-card mb0">
+                <div data-aos="partner" data-aos-easing="Ease-Both" data-aos-delay="1000" class="partner-card">
                     <img src="icons/defi.svg" alt="">
                 </div>
             </div>
         </div>
     </div>
     <div class="focus">
-        <!-- <div class="focus-card"> -->
-            <div class="focus-title">
-                I focus on the business goals of your product
+            <div data-aos-easing="left-rotate" data-aos="left-rotate" class="focus-title">
+                I focus on <br>
+                the business <br>
+                goals of your product
             </div>
-            <!-- <div class="focus-pepe">
-                <div class="focus-image">
-                    <img src="img/pepe-1.gif" alt="">
-                </div>
-                <div class="focus-btn">
-                    <span>
-
-                    </span>
-                </div>
-            </div> -->
-
-        <!-- </div> -->
     </div>
     <div class="skills">
         <div class="container-fluid">
@@ -213,42 +205,42 @@
     </div>
     <div class="work">
         <div class="container container-work">
-            <div class="work-title">
+            <div data-aos-delay="100" data-aos-easing="left-rotate" data-aos="left-rotate" data-aos-duration="700" class="work-title">
                 Cases
             </div>
             <div class="work-wrap">
                 <div class="work-column">
                     <div class="work-item">
-                        <img src="img/work-1.webp" alt="">
+                        <img data-aos-delay="200" data-aos-duration="600" data-aos-easing="left-rotate" data-aos="work-image" data-hover2="Name of the Project" src="img/work-1.webp" alt="">
                     </div>
                     <div class="work-item">
-                        <img src="img/work-2.webp" alt="">
+                        <img data-aos-delay="600" data-aos-duration="600" data-aos-easing="left-rotate" data-aos="work-image" data-hover2="Name of the Project" src="img/defiso.svg" alt="">
                     </div>
                 </div>
                 <div class="work-column">
                     <div class="work-item">
-                        <img src="img/work-3.webp" alt="">
+                        <img data-aos-delay="400" data-aos-duration="600" data-aos-easing="left-rotate" data-aos="work-image" data-hover2="Name of the Project" src="img/work-3.webp" alt="">
                     </div>
                     <div class="work-item">
-                        <img src="img/work-4.webp" alt="">
+                        <img data-aos-delay="800" data-aos-duration="600" data-aos-easing="left-rotate" data-aos="work-image" data-hover2="Name of the Project" src="img/work-4.webp" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="boost">
-        <div class="container-fluid">
+        <div class="container container-work">
             <div class="boost-wrap">
                 <div class="boost-text">
-                    <div class="boost-title">
-                        Want to boost your UI/UX skills?
+                    <div data-aos-delay="100" data-aos-easing="left-rotate" data-aos-duration="1000" data-aos="left-rotate" class="boost-title">
+                        Want boost your UI/UX skills?
                     </div>
-                    <div class="boost-descr">
+                    <div data-aos-delay="200" data-aos-easing="left-rotate" data-aos-duration="1000" data-aos="top-opacity" class="boost-descr">
                         <p>
-                            If you are a beginner but want to become a professional and successful designer, then I will help you
+                            If you are a beginner but want to become a professional and successful designer, then I will help you 
                         </p>
                     </div>
-                   <a href="#" class="boost-btn">
+                   <a data-aos-delay="100" data-aos-easing="left-rotate" data-aos-duration="1000" data-aos="top-opacity" href="#" class="boost-btn">
                        <span class="boost-btn_1"></span>
                        <span class="boost-btn_2"></span>
                        I WANT BE A PRO
@@ -260,11 +252,11 @@
     <div class="discuss">
         <div class="container-fluid">
             <div class="discuss-wrap">
-                <div class="discuss-title">
+                <div data-aos-delay="100" data-aos-easing="left-rotate" data-aos="left-rotate" data-aos-duration="700" class="discuss-title">
                     Let’s discuss something
                 </div>
 
-                <div class="discuss-btn">
+                <div data-aos-offset="100" data-aos-delay="200" data-aos-easing="left-rotate" data-aos-duration="800" data-aos="discuss-btn" class="discuss-btn">
                     <span class="discuss-btn_hover">
                         <span class="discuss-btn__text">
                             Tap on me
@@ -334,10 +326,21 @@
     </div>
 
 
+    <div class="cursors">
+        <div style="left: 293px; top: 470px;">
+            <span class="cursor-1">Pattern #2</span>
+        </div>
+        <div style="left: 293px; top: 470px;">
+            <span class="cursor-2">NAME OF THE PROJECT</span>
+        </div>
+      </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="js/queryLoader.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/cusror.js"></script>
     <script src="js/script.js"></script>
-
 </body>
 </html>
 

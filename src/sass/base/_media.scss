@@ -1,15 +1,14 @@
 //?
 @media (max-width: 2100px) {  
   .exp {
+    &-title {
+      font-size: calc(30px + 62 * (100vw / 2560));
+      margin-right: 20px;
+    }
     &-image {
       img {
         max-width: 755px;
       }
-    }
-  }
-  .focus {
-    &-card {
-      padding: 240px 270px 250px 100px;;
     }
   }
   .boost {
@@ -39,14 +38,6 @@
       img {
         max-width: 81%;
       }
-    }
-  }
-  .focus {
-    &-card {
-      padding: 240px 250px 250px 70px;  
-    }
-    &-title {
-      max-width: 878px;
     }
   }
   .boost {
@@ -119,7 +110,7 @@
     padding-left: 40px;
   }
   .nav {
-    padding: 43px 0px 0px 0px;
+    padding: 33px 0 0 0;
     &-logo {
       img {
         max-width: 140px;
@@ -149,25 +140,27 @@
     }
   }
   .header {
-    padding-top: 170px;
-    padding-bottom: 328px;
+    padding-top: 238px;
+    padding-bottom: 293px;
+    margin-bottom: 100px;
     &-title {
-      font-size: calc(38px + 99 * (100vw / 2560));
-      margin-bottom: 20px;
+      font-size: calc(52px + 68 * (100vw / 1440));
+      margin-bottom: 0px;
     }
     h3 {
-      font-size: calc(16px + 15 * (100vw / 2560));
+      font-size: calc(14px + 4 * (100vw / 1440));
     }
   }
   .exp {
-    margin-bottom: 193px;
+    margin-bottom: 113px;
     &-title {
       font-size: calc(38px + 34 * (100vw / 1440));
       max-width: 492px;
       transform: translateY(0);
+      margin-right: 0;
     }
     &-text {
-      margin-bottom: 50px;
+      margin-bottom: 10px;
     }
     &-descr {
       font-size: calc(16px + 2 * (100vw / 1440));
@@ -183,60 +176,40 @@
       }
     }
   }
-
   .partner {
-    margin-bottom: 84px;
+    margin-bottom: 144px;
+    padding: 0px 110px;
     .container-fluid {
       padding-left: 104px;
       padding-right: 170px;
     }
     &-card {
+      &:last-child {
+        img {
+          max-width: 160px;
+        }
+      }
       img {
         max-width: 78px;
+
       }
     }
   }
-
-
   .focus {
-    padding: 48px 40px 67px 40px;
+    padding: 164px 40px ;
     &-title {
-      font-size: calc(32px + 18 * (100vw / 1440)); //!
-      max-width: 627px;
-    }
-    &-card {
-      padding: 125px 242px 192px 64px;
-    }
-    &-image {
-      img {
-        max-width: 132px;
-      }
-    }
-    &-btn {
-      max-width: 120px;
-      max-height: 120px;
-      span {
-        width: 36px;
-        height: 36px;
-      }
-      &::after {
-        width: 120px;
-        height: 120px;
-      }
-      &:before {
-        width: 76px;
-        height: 76px;
-      }
+      font-size: calc(32px + 40 * (100vw / 1440)); //!
+      max-width: 720px;
     }
   }
   .skills {
+    padding-top: 70px;
     &-card {
       font-size: calc(20px + 16 * (100vw / 1440));
     }
   }
-
   .work {
-    padding-top: 180px;
+    padding-top: 200px;
     &-title {
       font-size: calc(38px + 54 * (100vw / 1440));
       margin-bottom: 56px;
@@ -252,10 +225,10 @@
     }
   }
   .boost {
-    padding: 380px 0px 240px 0px;
+    padding: 200px 0 148px 0;
     &-title {
       font-size: calc(38px + 54 * (100vw / 1440));
-      max-width: 944px;
+      max-width: 1005px;
     }
     &-descr {
       font-size: calc(16px + 2 * (100vw / 1440));
@@ -346,10 +319,16 @@
       border-radius: 43px;
     }
   }
+  .preloader {
+    &-card {
+      padding: 50px 61px;
+    }
+    &-image {
+      max-width: 168px;
+    }
+  }
 }
 //?
-
-
 
 @media (max-width: 1400px) { //1200
   .nav {
@@ -392,17 +371,7 @@
 @media (max-width: 1200px) { //992
   .focus {
     &-title {
-      max-width: 517px;
-    }
-    &-card {
-      padding: 125px 112px 125px 64px;
-    }
-    &-image {
-      top: -50px;
-      right: -50px;
-      img {
-        max-width: 102px;
-      }
+      max-width: 636px;
     }
   }
   .boost {
@@ -410,403 +379,422 @@
   }
 }
 
-// @media (max-width: 992px) { //768 
-//   .exp {
-//     &-image {
-//       img {
-//         width: 100%;
-//       }
-//     }
-//   }
-//   .partner {
-//     // display: none;
-//   }
-//   .container-fluid {
-//     padding-right: 16px!important;
-//     padding-left: 16px!important;
-//   }
-//   .focus {
-//     &-title {
-//       max-width: 367px;
-//     }
-//     &-card {
-//       padding: 105px 52px 105px 52px;
-//     }
-//   }
-//   .work {
-//     &-wrap {
-//       flex-direction: column;
-//       justify-content: center;
-//       align-items: center;
-//     }
-//     &-column {
-//       margin: 0;
-//     }
-//     &-item {
-//       &:last-child {
-//         margin-bottom: 21px;
-//       }
-//     }
-//   }
-//   .boost {
-//     padding: 150px 0 160px 0;
-//   }
-//   .discuss {
-//     height: 620px;
-//     &-wrap {
-//       flex-direction: column;
-//       justify-content: center;
-//       align-items: center;
-//       padding-right: 0;
-//       padding-top: 52px;
-//     }
-//     &-title {
-//       text-align: center;
-//       margin-bottom: 50px;
-//     }
-//   }
-//   .footer {
-//     &-dev {
-//       font-size: 13px;
-//       margin-left: 25px;
-//     }
-//     &-email {
-//       margin-right: 30px;
-//     }
-//   }
-//   .preloader {
-//     padding: 26px 20px 30px 20px;
-//     &-title {
-//       font-size: 62px;
-//       line-height: 110%;
-//     }
-//     &-timer {
-//       font-size: 28px;
-//       font-size: 24px;
-//       bottom: 20px;
-//       right: 20px;
-//     }
-//     }
-// }
+@media (max-width: 992px) { //768 
+  .nav {
+    &-list {
+      &-item {
+        margin-right: 29px;
+      }
+    }
+  }
+  .exp {
+    &-image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .container-fluid {
+    padding-right: 16px!important;
+    padding-left: 16px!important;
+  }
+  .partner {
+    padding: 0 0px;
+  }
+  .focus {
+    &-title {
+      max-width: 717px;
+    }
+  }
+  .work {
+    &-wrap {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &-column {
+      margin: 0;
+    }
+    &-item {
+      &:last-child {
+        margin-bottom: 21px;
+      }
+    }
+  }
+  .boost {
+    padding: 150px 0 160px 0;
+  }
+  .discuss {
+    height: 620px;
+    &-wrap {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-right: 0;
+      padding-top: 52px;
+    }
+    &-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
+  .footer {
+    &-dev {
+      font-size: 13px;
+      margin-left: 25px;
+    }
+    &-email {
+      margin-right: 30px;
+    }
+  }
+  .preloader {
+    &-card {
+      padding: 40px 50px;
+    }
+    &-image {
+      max-width: 138px;
+    }
+  }
+  .cursor {
+    &-1 {
+      left: -30px;
+      font-size: 42px;
+    }
+    &-2 {
+      font-size: 22px;
+    }
+  }
+}
 
-// @media (max-width: 768px) { //576 
-//   .nav { 
-//     padding: 29px 0 0px 0;
-//     &-toggle {
-//       display: flex;
-//       width: 22px;
-//       height: 18px;
-//     }
-//     &-logo {
-//       img {
-//         max-width: 152px;
-//       }
-//     }
-//     &-list {
-//       display: none;
-//       &__mob {
-//         display: flex;
-//       }
-//     }
-//     &-social {
-//       display: none;
-//       &__mob {
-//         display: flex;
-//       }
-//     }
-//   }
-//   // adaptive text
-//   .header {
-//     &-title {
-//       font-size: calc(34px + (106 + 106 * .7) * ((100vw / 320)/ 2560));
-//     }
-//     h3 {
-//       font-size: calc(14px + (18 + 18 * 0.7) * ((100vw - 320px) / 2560));
-//     }
-//   }
-//   .exp {
-//       &-title {
-//           font-size: calc(38px + (72 + 72 * 0.7) * ((100vw - 320px) / 2560));
-//       }
-//   }
-//   .focus {
-//     &-title {
-//       text-align: center;
-//       margin-top: 55px;
-//       font-size: calc(28px + (50 + 50 * 0.7) * ((100vw - 320px) / 2560));
-//     }
-//     &-card {
-//       flex-direction: column-reverse;
-//       padding: 35px 32px 45px 32px;
-//     }
-//   }
-//   .skills {
-//     &-card {
-//       font-size: calc(20px + (40 + 40 * 0.7) * ((100vw - 320px) / 2560));
-//     }
-//   }
-//   .work {
-//     padding-top: 100px;
-//     &-title {
-//       font-size: calc(32px + 43 * (100vw / 2560));
-//     }
-//   }
-//   .boost {
-//     padding: 110px 0 130px 0;
-//     &-title {
-//       font-size: calc(33px + 36 * (100vw / 2560));
-//     }
-//   }
-//   .discuss {
-//     &-title {
-//       font-size: calc(34px + 16 * (100vw / 1440));
-//     }
-//   }
-//   .footer {
-//     &-wrap {
-//       flex-direction: column-reverse;
-//       justify-content: center;
-//       align-items: center;
-//     }
-//     &-social {
-//       flex-direction: column;
-//       margin-bottom: 40px;
-//     }
-//     &-email {
-//       margin-right: 0;
-//       margin-bottom: 40px;
-//     }
-//   }
+@media (max-width: 768px) { //576 
+  .text-anim {
+    &::before {
+      bottom: -20%;
+      height: 20px;
+    }
+  }
+  .nav { 
+    padding: 29px 0 0px 0;
+    &-toggle {
+      display: flex;
+      width: 22px;
+      height: 18px;
+    }
+    &-logo {
+      img {
+        max-width: 152px;
+      }
+    }
+    &-list {
+      display: none;
+      &__mob {
+        display: flex;
+      }
+    }
+    &-social {
+      display: none;
+      &__mob {
+        display: flex;
+      }
+    }
+  }
+  // adaptive text
+  .header {
+    padding: 150px 0 200px 0;
+    &-title {
+      font-size: calc(52px + (148 + 148 * 0.7) * ((100vw - 320px) / 2560));
+    }
+    h3 {
+      font-size: calc(14px + (10 + 10 * 0.7) * ((100vw - 320px) / 2560));
+    }
+    &-block {
+      align-items: flex-start;
+    }
+  }
+  .exp {
+      &-title {
+          font-size: calc(38px + (72 + 72 * 0.7) * ((100vw - 320px) / 2560));
+      }
+  }
+  .focus {
+    &-title {
+      font-size: calc(32px + (98 + 98 * 0.7) * ((100vw - 320px) / 2560));
+    }
+    &-card {
+      flex-direction: column-reverse;
+      padding: 35px 32px 45px 32px;
+    }
+  }
+  .skills {
+    &-card {
+      font-size: calc(20px + (40 + 40 * 0.7) * ((100vw - 320px) / 2560));
+    }
+  }
+  .work {
+    padding-top: 100px;
+    &-title {
+      font-size: calc(32px + 43 * (100vw / 2560));
+    }
+  }
+  .boost {
+    padding: 110px 0 130px 0;
+    &-title {
+      font-size: calc(33px + 36 * (100vw / 2560));
+    }
+  }
+  .discuss {
+    &-title {
+      font-size: calc(34px + 16 * (100vw / 1440));
+    }
+  }
+  .footer {
+    &-wrap {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+    &-social {
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+    &-email {
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+  }
 
-// }
-// @media (max-width: 576px)  { //320
-//   .container,
-//   .container-fluid {
-//     padding-right: 16px;
-//     padding-left: 16px;
-//   }
-//   .nav {
-//     &-logo {
-//       img {
-//         max-width: 98px;
-//         width: 100%;
-//       }
-//     }
-//     &-toggle {
-//       span,
-//       &::after,
-//       &::before {
-//         height: 2px;
-//       }
-//     }
-//   }
-//   .header {
-//     padding: 93px 0 113px 0;
-//     &-name {
-//       margin-bottom: 20px;
-//     }
-//   }
-//   .exp {
-//     margin-bottom: 38px;
-//     &-title {
-//       margin-bottom: 20px;
-//     }
-//     &-descr {
-//       font-size: 16px;
-//       margin-top: 0px;
-//     }
-//     &-text {
-//       margin-bottom: 0;
-//     }
-//     &-image {
-//       img {
-//         width: 288px;
-//       }
-//     }
-//   }
-//   .partner {
-//     margin-bottom: 36px;
-//     &-wrap {
-//       flex-wrap: wrap;
-//       justify-content: space-evenly;
-//       align-items: center;
-//   }
-//     &-card {
-//       width: 92px;
-//       margin-bottom: 30px;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       &:last-child {
-//         margin-right: 0;
-//       }
-//       img {
-//         max-width: 58px;
-//       }
-//     }
-//   }
-//   .mb0 {
-//     margin-bottom: 0;
-//   }
-//   .focus {
-//     padding: 24px 16px 24px 17px;
-//     &-card {
-//       padding: 45px 13px 36px 12px;
-//     }
-//     &-title {
-//       margin-top: 47px;
-//     }
-//   }
-//   .skills {
-//     padding-top: 30px;
-//     &-wrap {
-//       flex-wrap: wrap;
-//       justify-content: space-between;
-//     }
-//     &-card {
-//       margin: 0 14px 30px 0;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//     }
-//   }
-//   .work {
-//     padding-top: 28px;
-//     &-item {
-//       height: 380px;
-//       img {
-//         height: 100%;
-//         width: 100%;
-//         object-fit: cover;
-//       }
-//     }
-//     &-title {
-//       margin-bottom: 36px;
-//     }
-//   }
-//   .boost {
-//     padding: 43px 0 64px 0;
-//     &-text {
-//       height: 359px;
-//     }
-//     &-btn {
-//       height: 80px;
-//       width: 100%;
-//     }
-//   }
-//   .discuss {
-//     height: 470px;
-//     &-wrap {
-//       padding-top: 33px;
-//     }
-//     &-title {
-//       margin-bottom: 25px;
-//     }
-//     &-btn {
-//       width: 270px;
-//       height: 270px;
-//       height: 296px;
-//       &:hover {
-//         .discuss {
-//           &-btn_1, &-btn_2, &-btn_3 {
-//             width: 193px;
-//             height: 193px;
-//           }
-//         }
-//       }
-//       &_hover {
-//         width: 198px;
-//         height: 198px;
-//         font-size: 22px;
-//         &::after { // внешний
-//           width: 270px;
-//           height: 270px;
-//         }
-//         &::before {
-//           width: 230px;
-//           height: 230px;
-//         }
-//       }
-//     }
-//   }
-//   .footer {
-//     padding-bottom: 28px;
-//     &-email,
-//     &-social {
-//       margin-bottom: 33px;
-//     }
-//     &-dev {
-//       margin-bottom: 20px;
-//       margin-left: 0;
-//       font-size: 15px;
-//     }
-//     &-block-wrap {
-//       flex-direction: column-reverse;
-//       justify-content: center;
-//       align-items: center;
-//     }
-//   }
-
-//   .menu {
-//     &-btn {
-//       width: 100%;
-//       height: 80px;
-//     }
-//     .container-fluid {
-//       margin: 0;
-//     }
-//     &-social {
-//       &-wrap {
-//         flex-direction: column;
-//       }
-//     }
-//     .nav {
-//       &-social {
-//         &__mob {
-//           margin-bottom: 32px;
-//         }
-//         &__link {
-//           svg {
-//             max-width: 32px;
-//             width: 32px;
-//           }
-//         }
-//       }
-//     }
-//   }
-
-//   .main-404 {
-//     padding: 134px 0px;
-//     &__title {
-//       font-size: 64px;
-//       margin-bottom: 6px;
-//     }
-//     &__subtitle {
-//       font-size: 14px;
-//       margin-bottom: 91px;
-//     }
-//     &__btn {
-//       font-size: 18px;
-//       width: 288px;
-//       height: 80px;
-//       border: 1px solid #131218;
-//       border-radius: 43px;
-//     }
+}
+@media (max-width: 576px)  { //320
+  .container,
+  .container-fluid {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .nav {
+    &-logo {
+      img {
+        max-width: 98px;
+        width: 100%;
+      }
+    }
+    &-toggle {
+      span,
+      &::after,
+      &::before {
+        height: 2px;
+      }
+    }
+  }
+  .header {
+    padding: 80px 0 127px 0;
+    margin-bottom: 41px;
+    &-name {
+      margin-bottom: 0;
+    }
+    &-title {
+      margin: 14px 0px;
+    }
+  }
+  .exp {
+    margin-bottom: 60px;
+    &-title {
+      margin-bottom: 20px;
+    }
+    &-descr {
+      font-size: 16px;
+      margin-top: 0px;
+      line-height: 162%;
+      p {
+        max-width: 284px;
+      }
+    }
+    &-text {
+      margin-bottom: 0;
+    }
+    &-image {
+      img {
+        max-width: 288px;
+        height: 306px;
+      }
+    }
+  }
+  .partner {
+    margin-bottom: 32px;
+    padding: 0;
+    &-wrap {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+  }
+    &-card {
+      width: 35px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:last-child {
+        margin-right: 0;
+        img {
+          width: 50px;
+        }
+      }
+      img {
+        max-width: 35px;
+      }
+    }
+  }
+  .focus {
+    padding: 132px 16px;
+    &-title {
+      text-align: left;
+      margin-top: 0;
+      max-width: 100%;
+      br {
+        display: block;
+      }
+    }
+  }
+  .skills {
+    padding-top: 30px;
+    &-wrap {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &-card {
+      margin: 0 14px 30px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .work {
+    padding-top: 28px;
+    &-item {
+      height: 380px;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    &-title {
+      margin-bottom: 36px;
+    }
+  }
+  .boost {
+    padding: 43px 0 64px 0;
+    &-text {
+      height: 359px;
+    }
+    &-btn {
+      height: 80px;
+      width: 100%;
+    }
+  }
+  .discuss {
+    height: 470px;
+    &-wrap {
+      padding-top: 33px;
+    }
+    &-title {
+      margin-bottom: 13px;
+    }
+    &-btn {
+      width: 270px;
+      height: 270px;
+      height: 296px;
+      &:hover {
+        .discuss {
+          &-btn_1, &-btn_2, &-btn_3 {
+            width: 193px;
+            height: 193px;
+          }
+        }
+      }
+      &_hover {
+        width: 198px;
+        height: 198px;
+        font-size: 22px;
+        &::after { // внешний
+          width: 270px;
+          height: 270px;
+        }
+        &::before {
+          width: 230px;
+          height: 230px;
+        }
+      }
+    }
+  }
+  .footer {
+    padding-bottom: 28px;
+    &-email,
+    &-social {
+      margin-bottom: 33px;
+    }
+    &-dev {
+      margin-bottom: 20px;
+      margin-left: 0;
+      font-size: 15px;
+    }
+    &-block-wrap {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .menu {
+    &-btn {
+      width: 100%;
+      height: 80px;
+    }
+    .container-fluid {
+      margin: 0;
+    }
+    &-social {
+      &-wrap {
+        flex-direction: column;
+      }
+    }
+    .nav {
+      &-social {
+        &__mob {
+          margin-bottom: 32px;
+        }
+        &__link {
+          svg {
+            max-width: 32px;
+            width: 32px;
+          }
+        }
+      }
+    }
+  }
+  .main-404 {
+    padding: 134px 0px;
+    &__title {
+      font-size: 64px;
+      margin-bottom: 6px;
+    }
+    &__subtitle {
+      font-size: 14px;
+      margin-bottom: 91px;
+    }
+    &__btn {
+      font-size: 18px;
+      width: 288px;
+      height: 80px;
+      border: 1px solid #131218;
+      border-radius: 43px;
+    }
     
-//   }
-
-//   .preloader {
-//     padding: 10px 15px 10px 15px;
-//     &-title {
-//       font-size: 41px;
-//       max-width: 365px;
-//     }
-//     &-timer {
-//       font-size: 20px;
-//       bottom: 10px;
-//       right: 15px;
-//     }
-//   }
-  
-  
-// }
+  }
+  .preloader {
+    &-card {
+      padding: 34px 45px;
+    }
+    &-image {
+      max-width: 116px;
+    }
+  }
+}
