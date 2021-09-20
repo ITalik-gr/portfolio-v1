@@ -161,4 +161,56 @@
       }
     }
   }
+  &-white {
+    background-color: #fff;
+    .nav {
+      &-list {
+        &-item {
+          &:hover {
+            transform: translateX(10px);
+            a {
+              color: #0E68EF;
+              &::before {
+                opacity: 1;
+              }
+            }
+          }
+          &::before {
+            content: '';
+            position: absolute;
+            left: -23px;
+            top: calc(50% - 0.5px);
+            width: 18px;
+            height: 1px;
+            background-color: #0E68EF;
+            opacity: 0;
+            transition: .3s all;
+          }
+          a {
+            color: #1D1A23;
+          }
+          &__sale {
+            color: #1D1A23;
+          }
+        }
+      }
+      &-social {
+        &__link {
+          &:hover {
+            svg {
+              path {
+                stroke: #0E68EF;
+                transition: .3s all;
+              }
+            }
+          }
+          svg {
+            path {
+              stroke: #1D1A23;
+            }
+          }
+        }
+      }
+    }
+  }
 }

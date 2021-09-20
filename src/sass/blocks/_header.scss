@@ -3,10 +3,12 @@
 
 
 .header {
-  padding-top: 402px;
-  padding-bottom: 452px;
+  min-height: 1153px;
+  max-height: 1140px;
   background: #131218;
   margin-bottom: 150px;
+  display: flex;
+  align-items: center;
   &-wrapper {
     display: flex;
     flex-direction: column;
