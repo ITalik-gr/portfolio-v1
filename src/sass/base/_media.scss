@@ -1,12 +1,4 @@
 //?
-@media (max-width: 2540px) {
-  .container {
-    &-defi {
-      padding-right: 40px;
-      padding-left: 40px;
-    }
-  }
-}
 @media (max-width: 2100px) {  
   .exp {
     &-title {
@@ -28,6 +20,19 @@
       height: 122px;
       min-height: 10px;
       font-size: 28px;
+    }
+  }
+  .defi-2 {
+    &-image {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .container {
+    &-defi {
+      padding-right: 100px;
+      padding-left: 100px;
     }
   }
 }
@@ -102,6 +107,22 @@
       margin-left: 35px;
     }
   }
+  .defi {
+    &-2 {
+      &-title {
+        margin-bottom: 36px;
+      }
+      &-text {
+        margin-left: 48px;
+      }
+    }
+  }
+  .container {
+    &-defi {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  }
 }
 @media (max-width: 1920px) {
   .exp {
@@ -162,6 +183,19 @@
     }
     h3 {
       font-size: calc(14px + 4 * (100vw / 1440));
+    }
+    &-defi {
+      margin-bottom: 71px;
+      margin-top: 99px;
+      &-title {
+        font-size: calc(46px + 46 * (100vw / 1440));
+      }
+      &-descr {
+        font-size: calc(16px + 2 * (100vw / 1440));
+      }
+      &-year {
+        font-size: 18px;
+      }
     }
   }
   .exp {
@@ -347,6 +381,58 @@
       width: 600px;
       left: -150px;
     }
+  }
+
+  .defi {
+    &-2 {
+      &-title {
+        font-size: calc(38px + 26 * (100vw / 1440));
+      }
+      &-descr {
+        font-size: calc(16px + 4 * (100vw / 1440));
+      }
+    }
+    &-images {
+      &-image {
+        margin-right: 20px;
+      }
+    }
+    &-text {
+      margin: 124px 0px;
+      &-title{
+        font-size: calc(38px + 26 * (100vw / 1440));
+      }
+      &-descr {
+        font-size: calc(16px + 4 * (100vw / 1440));
+      }
+    }
+  }
+  .check {
+    margin: 64px 0px;
+    height: 361px;
+    &-title {
+      margin-bottom: 48px;
+      font-size: calc(38px + 34 * (100vw / 2560));
+    }
+    &-btn {
+      width: 234px;
+      height: 80px;
+      &-image {
+        img {
+          max-width: 28px;
+        }
+      }
+      &-text {
+        font-size: 18px;
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .next-case {
+    margin-bottom: 64px;
+    font-size: 32px;
   }
 }
 //?

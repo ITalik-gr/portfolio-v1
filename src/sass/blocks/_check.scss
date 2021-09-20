@@ -6,15 +6,16 @@
   align-items: center;
   flex-direction: column;
   margin-bottom: 155px;
+  margin-top: 84px;
   &-title {
     font-weight: 600;
-    font-size: 92px;
     line-height: 111%;
     text-align: center;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 64px;
+    font-size: calc(38px + 54 * (100vw / 2560));
   }
   &-buttons {
     display: flex;

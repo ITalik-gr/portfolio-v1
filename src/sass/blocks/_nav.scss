@@ -164,6 +164,13 @@
   &-white {
     background-color: #fff;
     .nav {
+      &-toggle {
+        span,
+        &::before,
+        &::after {
+          background-color: #1D1A23;
+        }
+      }
       &-list {
         &-item {
           &:hover {
