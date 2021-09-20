@@ -102,7 +102,23 @@
 
 
 // First block show animate Close
+// Exp hover
 
+  .exp {
+    &-image {
+      img {
+        transition: .4s all;
+      }
+      &:hover {
+        cursor: none;
+        img {
+          filter: brightness(0.7);
+        }
+      }
+    }
+  }
+
+// Exp close
 // Work
 
 .work {
@@ -113,7 +129,7 @@
     &:hover {
       cursor: none;
       img {
-        filter: brightness(0.7);
+        
       }
     }
   }
