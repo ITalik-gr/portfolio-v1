@@ -1,15 +1,14 @@
 SmoothScroll({
   // Время скролла 400 = 0.4 секунды
-  animationTime    : 700,
+  animationTime    : 400,
   // Размер шага в пикселях 
-  stepSize         : 125,
+  stepSize         : 100,
 
   // Дополнительные настройки:
-  
   // Ускорение 
-  accelerationDelta : 35,  
+  accelerationDelta : 20,  
   // Максимальное ускорение
-  accelerationMax   : 2,   
+  accelerationMax   : 1,   
 
   // Поддержка клавиатуры
   keyboardSupport   : true,  
