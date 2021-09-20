@@ -327,6 +327,14 @@
       max-width: 168px;
     }
   }
+
+  .cursor {
+    &-2 {
+      font-size: 42px;
+      width: 600px;
+      left: -150px;
+    }
+  }
 }
 //?
 
@@ -462,6 +470,8 @@
     }
     &-2 {
       font-size: 22px;
+      width: 400px;
+      left: -20px;
     }
   }
 }
