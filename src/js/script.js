@@ -24,7 +24,7 @@ window.onload = function () {
   let aa = setTimeout(function() {
     text_anim();
     opacity();
-  }, 1500)
+  }, 1800)
 
 }
 
@@ -56,8 +56,8 @@ AOS.init({
   
 
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 140, // offset (in px) from the original trigger point
-  delay: 400,
+  offset: 125, // offset (in px) from the original trigger point
+  delay: 340,
   duration: 900, // values from 0 to 3000, with step 50ms
   once: true, // whether animation should happen only once - while scrolling down
   mirror: false, // whether elements should animate out while scrolling past them
