@@ -124,10 +124,21 @@
   opacity: 1;
 }
 
+[data-aos="standart"] {
+  transform: translateY(50px);
+  // transform-origin: 0 50%;
+  opacity: 0;
+}
+[data-aos="standart"].aos-animate { // 0.9s duration. delay - 0.34s
+  transform: translateY(0);
+  // transform-origin: 0 50%;
+  opacity: 1;
+}
+
 
 [data-aos] {
-  body[data-aos-easing="left-rotate"] &,
-  &[data-aos][data-aos-easing="left-rotate"] {
+  body[data-aos-easing="default"] &,
+  &[data-aos][data-aos-easing="default"] {
     transition-timing-function: cubic-bezier(.5,-0.03,.46,1.11);
   }
 }
@@ -189,11 +200,11 @@
 }
 
 [data-aos="discuss-btn"] {
-  transform: rotate(3deg) scale(0.6);
+  // transform: rotate(3deg);
   opacity: 0;
 }
 [data-aos="discuss-btn"].aos-animate {
-  transform: rotate(0deg) scale(1);
+  // transform: rotate(0deg);
   opacity: 1;
 }
 
