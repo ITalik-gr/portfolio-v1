@@ -557,6 +557,9 @@
       font-size: calc(33px + 36 * (100vw / 2560));
     }
   }
+  .boost-btn__wrap {
+    width: 100%;
+  }
   .discuss {
     &-title {
       font-size: calc(34px + 16 * (100vw / 1440));
@@ -576,6 +579,9 @@
       margin-right: 0;
       margin-bottom: 40px;
     }
+  }
+  .cursors {
+    display: none;
   }
 
 }
