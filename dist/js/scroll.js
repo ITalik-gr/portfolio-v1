@@ -31,5 +31,5 @@ $(document).bind( 'mousewheel', function (e) {
   e.stopPropagation(); 
   $(document.body).stop().animate( { 
        scrollTop : nt 
-   } , 500 , 'easeInOutCubic' );  
+   } , 400 , 'easeInOutCubic' );  
 } )
