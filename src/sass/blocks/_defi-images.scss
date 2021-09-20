@@ -1,0 +1,11 @@
+.defi-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-image {
+    img {
+      max-width: 868px;
+      max-height: 937px;  
+    }
+  }
+}

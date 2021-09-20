@@ -1,0 +1,33 @@
+.defi-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0px;
+  &-image {
+    img {
+      max-width: 868px;
+      max-height: 937px;
+    }
+  }
+  &-text {
+
+  }
+  &-title {
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #1D1A23;
+    margin-bottom: 40px;
+  }
+  &-descr {
+    font-size: 24px;
+    line-height: 162%;
+    letter-spacing: -0.015em;
+    color: #1D1A23;
+    p {
+      max-width: 615px;
+    }
+  }
+}
