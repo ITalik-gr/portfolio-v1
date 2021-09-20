@@ -40,6 +40,11 @@
       }
     }
   }
+  .focus {
+    &-title {
+      max-width: 1317px;
+    }
+  }
   .boost {
     &-text {
       height: 540px;
@@ -199,7 +204,7 @@
     padding: 164px 40px ;
     &-title {
       font-size: calc(32px + 40 * (100vw / 1440)); //!
-      max-width: 800px;
+      max-width: 720px;
     }
   }
   .skills {
